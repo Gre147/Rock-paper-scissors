@@ -174,35 +174,6 @@ document.getElementById("color2").style.display = "none";
 document.getElementById("container").style.display = "block";
 let audio = new Audio("18 Survivor - Eye of the Tiger.mp3");
 audio.play();
-
-})
-    fetch("https://gre147.github.io/Rock-paper-scissors/api-endpoint", {
-  mode: 'cors',
-  headers: {
-    "Access-Control-Allow-Origin": "*", // Allow access from all origins
-  },
-})
-        
-.then(response => response.json())
-.then(data => console.log(data));
-    {
-  "inline_keyboard": [
-    [
-      {
-        "text": "Open Web App",
-        "web_app": {
-          "url": "https://gre147.github.io/Rock-paper-scissors/"
-        }
-      }
-    ]
-  ]
-}
-    <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="MotgrrrBot" data-size="large" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
-<script type="text/javascript">
-  function onTelegramAuth(user) {
-    alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
-  }
-</script>
 </script>
 </body>
 </html>
