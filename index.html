@@ -176,6 +176,14 @@ let audio = new Audio("18 Survivor - Eye of the Tiger.mp3");
 audio.play();
 
 })
+    fetch("https://gre147.github.io/Rock-paper-scissors/api-endpoint", {
+  mode: 'cors',
+  headers: {
+    "Access-Control-Allow-Origin": "*", // Allow access from all origins
+  },
+})
+.then(response => response.json())
+.then(data => console.log(data));
 </script>
 </body>
 </html>
